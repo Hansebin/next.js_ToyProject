@@ -24,8 +24,15 @@ const config: Config = {
       margin: {
         "section-my": "calc((100vh - 700px) / 2)",
       },
+      padding: {
+        "26": "26px",
+        "60": "60px",
+      },
       boxShadow: {
         basic: "rgba(149, 157, 165, 0.2) 0px 8px 24px;",
+      },
+      colors: {
+        "green-basic": "#44BB44",
       },
     },
   },
