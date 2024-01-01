@@ -16,8 +16,8 @@ export default async function ViewWeather() {
 
   return (
     <div>
-      <span className="pr-5 text-green-basic">현재 Seoul 날씨</span>
-      <span className="pr-4">{weatherTemp}도</span>
+      <span className="pr-1">현재 Seoul 날씨</span>
+      <span className="pr-1">{weatherTemp}도</span>
       <span>
         {weatherIcon} {weatherDesc}
       </span>
