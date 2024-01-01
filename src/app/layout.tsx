@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/Header";
+import Container from "./components/Container";
 
 export const metadata: Metadata = {
   title: "Ask | 무엇이든 물어보세요.",
@@ -17,7 +19,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <div className="w-full h-screen">{children}</div>
+        <div className="w-full h-screen">
+          <Header />
+          <section className="pt-section">
+            <Container>{children}</Container>
+          </section>
+        </div>
       </body>
     </html>
   );
