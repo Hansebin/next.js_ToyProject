@@ -1,13 +1,16 @@
-import ViewDate from "@/components/ViewDate";
-import ViewWeather from "@/components/ViewWeather";
+import Link from "next/link";
+import Container from "./Container";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between w-full h-header px-60 py-26 text-3xl font-semibold shadow-basic rounded-lg">
-      <div className="flex items-center gap-2">
-        🗓️ <ViewDate />
-      </div>
-      <ViewWeather />
-    </div>
+    <header className="fixed top-0 left-0 right-0 w-full h-header shadow-basic">
+      <Container>
+        <div className="flex items-end justify-between h-header pb-3 text-xl font-semibold">
+          <Link href="/docs">Ask Docs</Link>
+          <Link href="/">Ask Home</Link>
+          <Link href="/intro">Ask Intro</Link>
+        </div>
+      </Container>
+    </header>
   );
 }
