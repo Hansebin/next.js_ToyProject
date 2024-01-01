@@ -1,9 +1,11 @@
-import Container from "./components/Container";
+import HomeInfo from "./components/HomeInfo";
 
 export default function Home() {
   return (
     <>
-      <Container />
+      <div>
+        <HomeInfo />
+      </div>
     </>
   );
 }
